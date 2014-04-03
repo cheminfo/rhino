@@ -1952,6 +1952,10 @@ public class Context
         classShutter = shutter;
         hasClassShutter = true;
     }
+    
+    public synchronized final boolean hasClassShutter() {
+        return hasClassShutter;
+    }
 
     final synchronized ClassShutter getClassShutter()
     {
